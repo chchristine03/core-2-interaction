@@ -1,0 +1,57 @@
+.Hip-Hop-Rap{
+    color: rgb(66, 45, 170);
+    font-size: 30px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+
+}
+.Pop{
+    color:rgb(255, 95, 226);
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+.Electric-Dance{
+    color:rgb(169, 215, 255);
+    transform: skew(-30deg);
+    font-size:30px;
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif
+}
+.Alternative-Indie{
+    color:rgb(88, 17, 73);
+    font-family:"Times New Roman", Times, serif;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-left: 200px;
+    margin-right:200px;
+    background: linear-gradient(10deg, rgb(147, 97, 194), rgba(59, 8, 8, 0) 70.71%),
+            linear-gradient(127deg, rgb(164, 50, 145), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(17, 70, 111, 0.876), rgba(0,0,255,0) 70.71%);
+   color:white
+}
+.poem{
+    color: rgb(82, 10, 72);
+    border-style: dotted;
+    border-color: rgb(197, 223, 255);
+    border-width: 10px;
+}
+.title{
+    color: rgb(208, 236, 255);
+   font-size:23px;
+   background-color:rgb(159, 59, 139);
+   border-style:dotted;
+   border-color: rgb(197, 223, 255);
+    border-width: 2px;
+   
+}
+.intro{
+    font-size: 50px;
+    background-color: rgb(208, 236, 255);
+    color:rgb(159, 59, 139);
+    border-style:dotted;
+    border-color: rgb(159, 59, 139);
+     border-width: 6px;
+}
+button{
+    background-color: rgb(208, 236, 255);
+    color:rgb(159, 59, 139);
+}
