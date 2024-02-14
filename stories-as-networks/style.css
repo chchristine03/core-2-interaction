@@ -1,0 +1,58 @@
+body {
+    margin-top: 100px;
+    font-family: Arial, sans-serif;
+    background-color: grey;
+}
+
+#number-container {
+    font-size: 100px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    white-space: wrap; /* Prevent wrapping */
+    height: 100vh; /* Fill up the entire viewport height */
+    width: 100vw; /* Fill up the entire viewport width */
+}
+
+.number {
+    margin: 5px;
+    display: inline-block;
+    width: auto; /* Adjust width of each number to fit content */
+    min-width: 50px; /* Minimum width of each number */
+    height: auto; /* Adjust height to auto */
+    text-align: center;
+    line-height: 1.2; /* Adjust line height as needed */
+    border: 5px solid #ffffff00;
+    border-radius: 5px;
+    color: white;
+    white-space: normal; /* Allow text to wrap to the next line */
+    font-size: 100px; /* Ensure semicolon is included */
+}
+.start{
+    font-family: Arial, sans-serif;
+    font-size: 60px;
+    margin-left: 250px;
+    position:absolute; left:50px;
+    color:pink;
+    background-color: black;
+    z-index:100;
+}
+.one{
+    top:180px;
+}
+.end{
+    font-family: Arial, sans-serif;
+    font-size: 60px;
+    margin-left: 250px;
+    position:absolute;left:550px;
+    color:pink;
+    background-color: black;
+    z-index:100;
+}
+.two{
+    top:360px;
+}
+.three{
+    top:520px;
+}
+.four{
+    top:700px
+}

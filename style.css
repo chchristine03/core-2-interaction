@@ -5,13 +5,13 @@ body{
 }
 .container {
     width: 500px;
-    height: 250px;
    padding-left: 460px;
    padding-right: 460px;
     /*outline: solid 1px black;*/
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(179, 43, 43, 0); 
   }
   
   .circle {
@@ -19,16 +19,48 @@ body{
     height: 500px;
     border-radius: 50%;
     background-color: rgb(0, 0, 0);
+    transition: background-color 3s ease-out 100ms
   }
-
+.circle:hover{
+  background-color:rgb(235, 192, 231);
+}
 h1{
-    font-family:'Times New Roman', Times, serif;
-    font-size: 30px;
-    color:aliceblue;  
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color:rgb(255, 255, 255);
+    padding-top: 100px
+}
+h2{
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color:rgb(255, 255, 255);
+  padding-bottom: 20px;
+  background-color: pink
 
 }
 li{
-    font-family:'Times New Roman', Times, serif;
+    padding-top:200px;
+    font-family: Arial, sans-serif;
     font-size: 30px;
-    color:aliceblue
+    color:aliceblue;
+    background-color: rgba(0, 255, 255, 0);
 }
+a:link {
+  color:rgb(255, 255, 255);
+}
+a:visited {
+  color:rgb(255, 255, 255);
+}
+a:hover {
+  color:rgb(235, 192, 231);
+}
+
+
+/*div:nth-child(3) {
+  position:relative;
+  top:30px;
+  left:30px;
+}
+
+position:fixed
+top:
