@@ -1,3 +1,4 @@
+
 /*section{
     display:flex;
     height: 120px;
@@ -5,23 +6,24 @@
 */
 body {
     margin-top: 100px;
-    font-family: Arial, sans-serif;
+    font-family: "input-serif", serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: rgb(50, 51, 62);
+    margin-bottom: 100px;
 }
 
 #number-container {
     position: fixed; top: 0;
     font-size: 100px;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow:hidden; /* Prevent horizontal scrolling */
     white-space: wrap; 
     height: 100vh; /* Fill up the entire viewport height */
     width: 100vw; /* Fill up the entire viewport width */
 }
 #generate-btn{
     position:fixed;
-    
     z-index: 100;
-
 }
 
 .number {
@@ -39,8 +41,10 @@ body {
     font-size: 130px; /* Ensure semicolon is included */
    
 }
-.start{
-    font-family: Arial, sans-serif;
+.start{    
+    font-family: miller-display, serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 60px;
     margin-left: 250px;
     position:absolute; left:50px;
@@ -50,7 +54,9 @@ body {
 }
 
 .end{
-    font-family: Arial, sans-serif;
+    font-family: "input-serif", serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 60px;
     margin-right: 250px;
     position:absolute;left:550px;
@@ -84,7 +90,7 @@ body {
     display:flex;
     justify-content: space-around;
     flex-direction: column;
-    gap:160px
+    gap:140px
 }
 .line{
     display:flex;
@@ -99,7 +105,7 @@ body {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-      typing 1.5s steps(30, end),
+      typing 3s steps(40, end),
       blink-caret .5s step-end infinite;
   }
   
@@ -113,4 +119,22 @@ body {
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: rgb(144, 255, 246) }
+  }
+
+  .logic-button{
+    position: relative; 
+    margin-left: 690px;
+    top: 20px; 
+    font-family: miller-display, serif;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  .poetry-button{
+    position: relative; 
+    margin-left: 390px;
+    top: 20px; 
+    font-family: miller-display, serif;
+    font-weight: 400;
+    font-style: normal;
   }

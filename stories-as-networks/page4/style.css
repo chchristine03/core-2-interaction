@@ -140,3 +140,10 @@ body{
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
+
+  section{
+
+    font-family: miller-display, serif;
+    font-weight: 400;
+    font-style: normal;
+ }

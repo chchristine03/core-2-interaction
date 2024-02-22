@@ -31,4 +31,3 @@ document.addEventListener('DOMContentLoaded', function() {
      // Initial generation of numbers when page loads
   generateNumbers();
 });
-
