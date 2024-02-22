@@ -50,8 +50,8 @@ section:nth-child(1) div:nth-child(2) {
     margin-top:550px;
     overflow-x:auto;
     white-space: nowrap;
-    background-color: rgb(25, 31, 98);
-    color:blue;
+    background-color:rgb(204, 102, 175);
+    color:rgb(10, 10, 41);
     z-index:120;
 }
  .horizontal-container3{
@@ -68,7 +68,7 @@ section:nth-child(1) div:nth-child(2) {
 .horizontal-container3-2{
     position: absolute; bottom: 200px; right: 200px;
     width:50%;
-    background-color: rgb(25, 21, 98);
+    background-color:rgb(243, 158, 244);
     color: pink;
     z-index:0;
 }
