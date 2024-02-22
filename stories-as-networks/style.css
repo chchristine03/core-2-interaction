@@ -6,7 +6,7 @@
 */
 body {
     margin-top: 100px;
-    font-family: "input-serif", serif;
+    font-family: miller-display, serif;
     font-weight: 400;
     font-style: normal;
     background-color: rgb(50, 51, 62);
@@ -97,8 +97,10 @@ body {
 }
 
 .typewriter {
-    color: #0f449a;
-    font-family: monospace;
+    color: #0f449a;   
+     font-family: miller-display, serif;
+    font-weight: 400;
+    font-style: normal;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid rgb(153, 219, 255); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */

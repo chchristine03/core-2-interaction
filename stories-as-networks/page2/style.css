@@ -50,23 +50,76 @@ body{
 }
 
 .book .pg.pg1 {
-    background-color: #5bc6f0;
+    background-color:rgb(243, 158, 244);
     border-radius: 20px 0 0 20px;
     left: 0;
     padding-left:10px;
+    color: blue;
 }
 
 .book .pg.pg2 {
-    background-color: rgb(85, 26, 57);
+    background-color: blue;
+    color:rgb(243, 158, 244);
     right: 0px;
     border-radius: 0 20px 20px 0;
 }
 
 .title{
-    color: #ffffff;   
+    color:rgb(243, 158, 244);
     font-size:100px;
     text-align:center;
     font-family: miller-display, serif;
     font-weight: 400;
     font-style: normal;
+    padding:10px;
+    z-index:100;
+    background-color:rgb(75, 75, 75);
+    position:fixed; top:50px; left:28%
 }
+
+
+#number-container {
+    position: fixed; top: 30px; left:30px; right:30px;
+    overflow-y:hidden;
+    font-size: 100px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    white-space: wrap; 
+    height: 100vh; /* Fill up the entire viewport height */
+    width: 100vw; /* Fill up the entire viewport width */
+    z-index: 0;
+}
+
+#generate-btn{
+    position:sticky; top: 100px;
+    margin-left:500px;
+    margin-bottom:100px;
+    z-index: 100;
+
+}
+.text{
+    z-index:100;
+}
+.number {
+    margin: 5px;
+    display: inline-block;
+    width: auto; /* Adjust width of each number to fit content */
+    min-width: 50px; /* Minimum width of each number */
+    height: auto; /* Adjust height to auto */
+    text-align: center;
+    line-height: 0.1; /* Adjust line height as needed */
+    border: 5px solid #ffffff00;
+    border-radius: 5px;
+    color:rgb(243, 158, 244);
+    white-space: normal; /* Allow text to wrap to the next line */
+    font-size: 150px; /* Ensure semicolon is included */
+    z-index:0;
+   
+}
+
+
+a:link{
+    color: rgb(0, 0, 0);
+}
+ a:visited{
+    color: rgb(0, 0, 0);
+ }
