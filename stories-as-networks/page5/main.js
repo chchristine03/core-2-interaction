@@ -5,8 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function generateNumbers() {
     const viewportWidth = window.innerWidth;
     const viewportHeight = window.innerHeight;
-    const numberWidth = 100; // Assumed width of each number
-    const numberHeight = 100; // Assumed height of each number
+    const numberWidth = 60; // Assumed width of each number
+    const numberHeight = 60; // Assumed height of each number
 
     // Calculate the number of rows and columns
     const numberOfRows = Math.ceil(viewportHeight / numberHeight);
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Generate and append numbers to the container
     for (let row = 0; row < numberOfRows; row++) {
         for (let col = 0; col < numberOfColumns; col++) {
-            const randomNumber = Math.floor(Math.random() * 1000); // Generate a random number
+            const randomNumber = Math.floor(Math.random() * 10); // Generate a random number
             const numberElement = document.createElement('span');
             numberElement.classList.add('number');
             numberElement.textContent = randomNumber;

@@ -1,15 +1,27 @@
+/*section{
+    display:flex;
+    height: 120px;
+}
+*/
 body {
     margin-top: 100px;
     font-family: Arial, sans-serif;
-    background-color: grey;
+    background-color: rgb(50, 51, 62);
 }
 
 #number-container {
+    position: fixed; top: 0;
     font-size: 100px;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    white-space: wrap; /* Prevent wrapping */
+    white-space: wrap; 
     height: 100vh; /* Fill up the entire viewport height */
     width: 100vw; /* Fill up the entire viewport width */
+}
+#generate-btn{
+    position:fixed;
+    
+    z-index: 100;
+
 }
 
 .number {
@@ -19,40 +31,86 @@ body {
     min-width: 50px; /* Minimum width of each number */
     height: auto; /* Adjust height to auto */
     text-align: center;
-    line-height: 1.2; /* Adjust line height as needed */
+    line-height: 0.1; /* Adjust line height as needed */
     border: 5px solid #ffffff00;
     border-radius: 5px;
-    color: white;
+    color: rgb(100, 114, 151);
     white-space: normal; /* Allow text to wrap to the next line */
-    font-size: 100px; /* Ensure semicolon is included */
+    font-size: 130px; /* Ensure semicolon is included */
+   
 }
 .start{
     font-family: Arial, sans-serif;
     font-size: 60px;
     margin-left: 250px;
     position:absolute; left:50px;
-    color:pink;
+    color:rgb(144, 255, 246);
     background-color: black;
-    z-index:100;
+
 }
-.one{
-    top:180px;
-}
+
 .end{
     font-family: Arial, sans-serif;
     font-size: 60px;
-    margin-left: 250px;
+    margin-right: 250px;
     position:absolute;left:550px;
-    color:pink;
+    color:rgb(41, 66, 194);
     background-color: black;
-    z-index:100;
+    
+}
+
+/*
+.one{
+    top:140px;
 }
 .two{
-    top:360px;
+    top:300px;
 }
 .three{
-    top:520px;
+    top:460px;
 }
 .four{
-    top:700px
+    top:620px
 }
+.five{
+    top:780px
+}
+.six{
+    top:960px
+}
+*/
+
+.rows{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap:160px
+}
+.line{
+    display:flex;
+}
+
+.typewriter {
+    color: #0f449a;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(153, 219, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 1.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(144, 255, 246) }
+  }

@@ -1,0 +1,82 @@
+#number-container {
+    position: fixed; top: 30px; left:30px; right:30px;
+    overflow-y:hidden;
+    font-size: 100px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    white-space: wrap; 
+    height: 100vh; /* Fill up the entire viewport height */
+    width: 100vw; /* Fill up the entire viewport width */
+    z-index: 0;
+}
+#generate-btn{
+    position:sticky; top: 100px;
+    margin-left:500px;
+    margin-bottom:100px;
+    z-index: 100;
+
+}
+.text{
+    z-index:100;
+}
+.number {
+    margin: 5px;
+    display: inline-block;
+    width: auto; /* Adjust width of each number to fit content */
+    min-width: 50px; /* Minimum width of each number */
+    height: auto; /* Adjust height to auto */
+    text-align: center;
+    line-height: 0.1; /* Adjust line height as needed */
+    border: 5px solid #ff89f500;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.477);
+    white-space: normal; /* Allow text to wrap to the next line */
+    font-size:150px; /* Ensure semicolon is included */
+    z-index:0;
+}
+
+body{
+    background-color:rgb(255, 179, 227);
+}
+
+.title1{
+    font-size:100px;
+    display: fixed; 
+    margin-top:100px;
+    background-color:rgba(255, 255, 255, 0);
+}
+.title2{
+    text-align:center;
+    font-size:100px;
+    display:fixed; 
+    margin-bottom:300px;
+}
+
+.center {
+    text-align:center;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+    border: 3px solid #00000000;
+    line-height:480%;
+    padding: 10px;
+    background-color: rgba(255, 192, 203, 0);
+}
+.rectangle{
+    text-align:center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    height:600px;
+    overflow:scroll;
+    padding: 15px;
+    background-color:rgb(255, 179, 227);
+    position: relative; 
+    margin-top:-30px; margin-bottom:-50px;
+}
+.text{
+    color: rgb(0, 0, 0);
+    font-size:20px;
+    line-height:380%;
+}
+
+border: 3px solid #000000;

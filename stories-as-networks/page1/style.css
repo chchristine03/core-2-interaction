@@ -1,0 +1,124 @@
+body{
+    background-color:rgb(255, 179, 227);
+    font-size:30px;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+
+/*
+section:nth-child(1) {
+	color: blue;
+    
+}
+
+section:nth-child(1) div:nth-child(2) {
+	color: rgb(138, 9, 31);
+}
+*/
+
+.horizontal-content{
+    width:50%;
+    font-size: 50px;
+    z-index:10
+    
+}
+
+.horizontal-container{
+   position: relative;
+   overflow-x:auto;
+   white-space: nowrap;
+   background-color: rgb(60, 169, 212);
+   color:blue;
+   z-index:300;
+}
+.horizontal-container1-2{
+    position: fixed; top:90px; right:30px;
+    width:400px;
+    background-color: rgb(204, 102, 175);
+    color: rgb(182, 234, 255);
+}
+
+
+.horizontal-container2{
+    position: sticky; top:200px; right:220px;
+    margin-top:550px;
+    overflow-x:auto;
+    white-space: nowrap;
+    background-color: rgb(25, 31, 98);
+    color:blue;
+    z-index:120;
+}
+ .horizontal-container3{
+    position:relative;
+    margin-top:250px;
+    margin-left:200px;
+    margin-bottom:400px;
+    overflow-x:auto;
+    white-space: nowrap;
+    background-color: rgb(93, 208, 254);
+    color:blue;
+    z-index:120;
+}
+.horizontal-container3-2{
+    position: absolute; bottom: 200px; right: 200px;
+    width:50%;
+    background-color: rgb(25, 21, 98);
+    color: pink;
+    z-index:0;
+}
+
+.horizontal-container4{
+    position: fixed; 
+    top:400px;
+    width:50%;
+    background-color: rgb(1, 129, 180);
+    color: pink;
+    z-index:0;
+}
+.poem{
+    margin-right:25%;
+    margin-left:25%;
+    margin-top: 10%;
+    z-index:30;
+}
+
+
+
+#number-container {
+    position: fixed; top: 30px; left:30px; right:30px;
+    overflow-y:hidden;
+    font-size: 100px;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    white-space: wrap; 
+    height: 100vh; /* Fill up the entire viewport height */
+    width: 100vw; /* Fill up the entire viewport width */
+    z-index: 0;
+}
+
+#generate-btn{
+    position:sticky; top: 100px;
+    margin-left:500px;
+    margin-bottom:100px;
+    z-index: 100;
+
+}
+.text{
+    z-index:100;
+}
+.number {
+    margin: 5px;
+    display: inline-block;
+    width: auto; /* Adjust width of each number to fit content */
+    min-width: 50px; /* Minimum width of each number */
+    height: auto; /* Adjust height to auto */
+    text-align: center;
+    line-height: 0.1; /* Adjust line height as needed */
+    border: 5px solid #ffffff00;
+    border-radius: 5px;
+    color: rgb(243, 158, 244);
+    white-space: normal; /* Allow text to wrap to the next line */
+    font-size: 180px; /* Ensure semicolon is included */
+    z-index:0;
+   
+}

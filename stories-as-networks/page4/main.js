@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Generate and append numbers to the container
     for (let row = 0; row < numberOfRows; row++) {
         for (let col = 0; col < numberOfColumns; col++) {
-            const randomNumber = Math.floor(Math.random() * 1000); // Generate a random number
+            const randomNumber = Math.floor(Math.random() * 10); // Generate a random number
             const numberElement = document.createElement('span');
             numberElement.classList.add('number');
             numberElement.textContent = randomNumber;
