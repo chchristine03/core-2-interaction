@@ -1,0 +1,78 @@
+/* Just to make the demo easier to work with. */
+
+:root {
+	--spacing: 1em;
+}
+
+body {
+	font-family: Verdana;
+	font-weight: 100;
+	line-height: 1.2;
+	padding: var(--spacing) var(--spacing) calc(4 * var(--spacing));
+	cursor: crosshair;
+}
+
+body * {
+	font-weight: 100;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 200%;
+}
+
+ul {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: calc(4 * var(--spacing));
+	margin-top: calc(4 * var(--spacing));
+	list-style: none;
+}
+
+li {
+	display: flex;
+	flex-direction: column;
+	gap: var(--spacing);
+}
+
+summary {
+	cursor: pointer;
+}
+
+.list-item {
+	position: relative;
+	border: 1px solid black;
+}
+
+.list-item-image {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.list-item-content {
+	background-color: black;
+	color: white;
+	position: absolute;
+	padding: 20px 25px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity .2s;
+}
+
+.list-item:hover .list-item-content {
+	opacity: 1;
+}
+
+@media (max-width: 600px) {
+	ul {
+		grid-template-columns: 1fr;
+	}
+}
