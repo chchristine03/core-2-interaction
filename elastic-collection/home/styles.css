@@ -1,0 +1,155 @@
+
+
+:root {
+	--spacing: 1em;
+}
+
+body {
+	line-height: 1.2;
+	padding: var(--spacing) var(--spacing) calc(4 * var(--spacing));
+	cursor: crosshair;
+
+}
+
+body * {
+	font-weight: 100;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 200%;
+}
+
+#collection {
+	display: grid;
+	flex-direction: row;
+	display:inline-block;
+	overflow: auto;
+	white-space: nowrap;
+	height:600px;
+	border: 1px solid rgba(243, 25, 255, 0);
+	background: linear-gradient(180deg,rgb(255, 179, 255), rgb(88, 109, 107),  rgb(19, 55, 61), rgb(81, 159, 185), rgb(0, 0, 0), rgb(0, 0, 0));
+	width:100vw;
+}
+
+li {
+	display: flex;
+	flex-direction: row;
+	gap: var(--spacing);
+	flex-direction: row;
+	display:inline-block;
+	overflow: auto;
+	white-space: nowrap;
+	
+}
+
+summary {
+	cursor: pointer;
+}
+
+.list-item {
+	position: relative;
+	border: 1px solid rgba(255, 25, 25, 0);
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.list-item-image {
+	object-fit: cover;
+	width: 350px;
+	height: 350px;
+	margin-top:100px;
+	border: 1px solid rgba(25, 217, 255, 0);
+}
+
+.list-item-content {
+	background-color: black;
+	color: white;
+	font-size:auto;
+	position: absolute;
+	padding: 20px 25px;
+	left: 0;
+	top: 0;
+	width: 350px;
+	height: 350px;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity .2s;
+
+	margin-top:100px;
+	border: 1px solid rgba(36, 255, 25, 0);
+}
+
+.list-item.is-active .list-item-content {
+	opacity: 1;
+}
+
+@media (max-width: 600px) {
+	ul {
+		grid-template-columns: 1fr;
+	}
+}
+
+
+.is-hidden {
+	display: none;
+}
+
+.flex-container {
+    display: flex;
+	
+}
+.sub-title{
+	color:rgb(0, 0, 0);
+	border: 2px solid rgba(0, 255, 213, 0);
+	font-size:60px;
+	font-family: "rafaella", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+section{
+	display: grid;
+	align-content: center;
+	min-height: 130vh;
+	scroll-snap-align: start;
+	
+}
+
+.hidden {
+	opacity:0;
+	transition: all 4s;
+}
+.show{
+	opacity:1;
+
+}
+
+html{
+	scroll-snap-type: y mandatory;
+}
+
+
+section:nth-child(1){
+	background: rgb(0, 0, 0);
+	scroll-behavior: smooth;
+	place-items: center;
+}
+section:nth-child(2){
+	background: rgb(255, 179, 255);
+	scroll-behavior: none;
+	scroll-behavior: smooth;
+	place-items: center;
+	margin-bottom:300px
+}
+
+.left{
+	display: flex;
+	border: 2px solid rgba(0, 106, 255, 0);
+	justify-content:left;
+	place-items: left;
+}

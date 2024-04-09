@@ -1,0 +1,122 @@
+    [
+        {
+        "category": "chair",
+        "color": "pink",
+        "song": "Attracted To You, Pink Pantheress",
+        "bpm": "114",
+        "audio": "audio/Attracted-to-You.mp3",
+        "image": "images/1.png"
+    },
+    {
+        "category": "chair",
+        "color": "blue",
+        "song": "Follow God, Kanye West",
+        "bpm": "180",
+        "audio": "audio/Kanye West - Follow God.mp3",
+        "image": "images/2.png"
+    },
+    {
+        "category": "chair",
+        "color": "green",
+        "song": "Jealous, Eyedress",
+        "bpm": "93",
+        "audio": "audio/Eyedress - Jealous.mp3",
+        "image": "images/3.png"
+    },
+    {
+        "category": "chair",
+        "color": "pink",
+        "song": "Love$ick, Mura Masa (feat. A$AP Rocky)",
+        "bpm": "89",
+        "audio": "audio/Mura Masa - Love$ick ft. A$AP Rocky.mp3",
+        "image": "images/4.png"
+    },
+    {
+        "category": "couch",
+        "color": "blue",
+        "song": "Pleasantries, Ark Patrol",
+        "bpm": "89",
+        "audio": "audio/Ark Patrol - Pleasantries.mp3",
+        "image": "images/5.png"
+    },
+    {
+        "category": "chair",
+        "color": "pink/grey",
+        "song": "Young and Beautiful, Lana Del Rey",
+        "bpm": "115",
+        "audio": "audio/Lana Del Rey - Young and Beautiful.mp3",
+        "image": "images/6.png"
+    },
+    {
+        "category": "chair",
+        "color": "metal silver",
+        "song": "Wake Up, Dom Corleo",
+        "bpm": "137",
+        "audio": "audio/Dom Corleo - Wake Up.mp3",
+        "image": "images/7.png"
+    },
+    {
+        "category": "cabinet",
+        "color": "brown",
+        "song": "A Town with an Ocean View, Joe Hisaishi",
+        "bpm": "107",
+        "audio": "audio/Joe Hisaishi - A Town with an Ocean View.mp3",
+        "image": "images/8.png"
+    },
+    {
+        "category": "cabinet",
+        "color": "orange",
+        "song": "The Weekend, SZA",
+        "bpm": "73",
+        "audio": "audio/SZA - The Weekend.mp3",
+        "image": "images/9.png"
+    },
+    {
+        "category": "bed",
+        "color": "pink",
+        "song": "Get You, Daniel Caesar (feat. Kali Uchis)",
+        "bpm": "74",
+        "audio": "audio/Get You (feat. Kali Uchis).mp3",
+        "image": "images/10.png"
+    },
+    {
+        "category": "bed",
+        "color": "blue",
+        "song": "Losing You, Solange",
+        "bpm": "114",
+        "audio": "audio/Solange - Losing You.mp3",
+        "image": "images/11.png"
+    },
+    {
+        "category": "bed",
+        "color": "orange",
+        "song": "Self Control, Frank Ocean",
+        "bpm": "80",
+        "audio": "audio/Frank Ocean - Self Control.mp3",
+        "image": "images/12.png"
+    },
+    {
+        "category": "desk",
+        "color": "brown",
+        "song": "Been Away, Brent Faiyaz",
+        "bpm": "133",
+        "audio": "audio/Brent Faiyaz - Been Away.mp3",
+        "image": "images/13.png"
+    },
+    {
+        "category": "desk",
+        "color": "metal silver",
+        "song": "No Bap, LUCKI",
+        "bpm": "127",
+        "audio": "audio/No Bap.mp3",
+        "image": "images/14.png"
+    },
+    {
+        "category": "desk",
+        "color": "blue",
+        "song": "Apple Pie, Travis Scott",
+        "bpm": "138",
+        "audio": "audio/Apple Pie.mp3",
+        "image": "images/15.png"
+    }
+]
