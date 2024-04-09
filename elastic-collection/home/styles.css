@@ -87,11 +87,6 @@ summary {
 	opacity: 1;
 }
 
-@media (max-width: 600px) {
-	ul {
-		grid-template-columns: 1fr;
-	}
-}
 
 
 .is-hidden {
@@ -160,4 +155,48 @@ section:nth-child(2){
 	font-style: normal;
 	font-size: 15px;
 	color:rgba(255, 255, 255, 0.637);
+}
+
+
+@media (max-width: 600px){
+	#cd-7 {
+		display: none;
+	}
+	#cd-5 {
+		display: none;
+	}
+	#cd-4 {
+		display: none;
+	}
+	#cd-2 {
+		display: none;
+	}
+	#cd-1 {
+		display: none;
+	}
+	#cd-3 {
+		display: none;
+		overflow-x:hidden;
+	}
+	#collection{
+		width:100%;
+	}
+	section:nth-child(2){
+		width:100vw;
+		overflow-x: hidden;
+	}
+	.sub-title{
+		width:100vw;
+
+	}
+	section{
+		width:100vw;
+	}
+	.left{
+		width:100vw;
+		height:100vh;
+	}
+	.title{
+		padding-right: 50px;
+	}
 }
