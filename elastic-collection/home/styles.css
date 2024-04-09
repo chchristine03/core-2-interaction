@@ -153,3 +153,11 @@ section:nth-child(2){
 	justify-content:left;
 	place-items: left;
 }
+
+.title-description{
+	font-family: "rafaella", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 15px;
+	color:rgba(255, 255, 255, 0.637);
+}
