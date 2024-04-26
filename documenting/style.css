@@ -1,0 +1,36 @@
+body{
+    background-color: white    ;
+}
+img{
+    height:auto;width:70%;
+}
+.center {
+        display: flex;
+        justify-content: center;
+        
+  }
+
+.name{
+    font-family: "new-science", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 80px;
+    text-align:center;
+
+}
+
+.title {
+    color: rgb(0, 0, 0);font-family: "new-science", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align:center;
+    top:200px;
+    padding-bottom:200px;
+}
+
+.box{
+    width:70%;
+    height:auto;
+    background-color: black;
+}
