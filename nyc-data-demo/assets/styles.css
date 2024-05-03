@@ -1,0 +1,20 @@
+:root {
+	--spacing: 25px;
+}
+
+body {
+	padding: var(--spacing);
+	background-color: black;
+	color: white;
+	font-family: sans-serif;
+}
+
+h1 {
+	margin-bottom: var(--spacing);
+	font-size: 80px;
+}
+
+.hour {
+	height: 30px;
+	margin-bottom: 5px;
+}

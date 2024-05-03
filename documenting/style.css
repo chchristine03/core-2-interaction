@@ -5,10 +5,10 @@ img{
     height:auto;width:70%;
 }
 .center {
-        display: flex;
-        justify-content: center;
-        
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .name{
     font-family: "new-science", sans-serif;
@@ -33,4 +33,5 @@ img{
     width:70%;
     height:auto;
     background-color: black;
+    
 }

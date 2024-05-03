@@ -1,0 +1,111 @@
+:root {
+	--spacing: 25px;
+}
+
+body {
+	padding: var(--spacing);
+	background-color: rgb(33, 28, 187);
+	color: white;
+	font-family: sans-serif;
+}
+
+h1 {
+	margin-bottom: var(--spacing);
+	font-size: 80px;
+}
+
+.hour {
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+ 
+.dragImg {
+	position: absolute;
+    width: 40vw;
+    height: auto;
+    cursor: grab;
+	z-index:100;
+  }
+
+.grid{
+	display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+	z-index:0
+	/* Q: how to make sure the bananas can be moved to the front of this?*/
+}
+
+.plate{
+	z-index:1;
+	filter: brightness(0.75);
+	width: 60vw;
+    height: 84vh;
+	background-color:rgb(236, 60, 204);
+	margin-right:50px;
+}
+.title{
+	font-size:100px;
+    font-family: "gin", serif;
+	font-weight: 400;
+	font-style: normal;
+	
+}
+.plate2{
+	z-index:1;
+	filter: brightness(0.75);
+	width: 25vw;
+    height: 84vh;
+	background-color:rgb(109, 241, 120);
+
+}
+.marquee { 
+	overflow: hidden;
+	position: relative;
+	animation: MarqueeLeft linear 10s infinite;
+	z-index:1;
+  }
+  @keyframes MarqueeLeft 
+  {
+	0% { right: -100% }
+	100% { right: 100% }
+  }
+
+/*  .grid{
+	width:100vw;
+    display: inline-block;
+	padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+  }
+  */
+
+.restaurant {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.restaurant img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+	background-color: aqua;
+	z-index:101;
+	position: relative;
+	left:100px;
+}
+
+/* Style for additional information */
+.additional-info {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.restaurant:hover .additional-info {
+    display: block;
+}
