@@ -6,7 +6,9 @@ body {
 	padding: var(--spacing);
 	background-color: rgb(33, 28, 187);
 	color: white;
-	font-family: sans-serif;
+    font-family: "gin", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 h1 {
@@ -34,14 +36,32 @@ h1 {
 	z-index:0
 	/* Q: how to make sure the bananas can be moved to the front of this?*/
 }
-
+#filter-buttons{
+	font-size:50px;
+}
 .plate{
 	z-index:1;
 	filter: brightness(0.75);
 	width: 60vw;
     height: 84vh;
 	background-color:rgb(236, 60, 204);
-	margin-right:50px;
+	margin-right:20px;
+}
+.plate2{
+	z-index:1;
+	width: auto;
+    height: 84vh;
+	background-color:rgb(236, 236, 60);
+}
+.information{
+	background-color:rgb(255, 19, 235);
+}
+.plate3{
+	z-index:1;
+	width: 90vw;
+    height: 84vh;
+	background-color:rgb(236, 60, 204);
+	margin-top:50px;
 }
 .title{
 	font-size:100px;
@@ -50,14 +70,7 @@ h1 {
 	font-style: normal;
 	
 }
-.plate2{
-	z-index:1;
-	filter: brightness(0.75);
-	width: 25vw;
-    height: 84vh;
-	background-color:rgb(109, 241, 120);
 
-}
 .marquee { 
 	overflow: hidden;
 	position: relative;

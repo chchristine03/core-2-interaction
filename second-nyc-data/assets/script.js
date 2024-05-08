@@ -39,6 +39,8 @@ function stopDragging() {
 
 
 
+
+
 document.addEventListener("DOMContentLoaded", function() {
     fetch('https://data.cityofnewyork.us/resource/43nn-pn8j.json')
         .then(response => response.json())
@@ -53,26 +55,57 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function renderRestaurants(restaurants) {
         const restaurantsDiv = document.getElementById('restaurants');
+        const informationDiv = document.querySelector('.information');
         restaurants.forEach(restaurant => {
             const restaurantDiv = document.createElement('div');
             restaurantDiv.classList.add('restaurant');
 
             // Add image based on grade
             const grade = restaurant.grade.toLowerCase();
+
+             // Skip rendering if grade is 'n' and others
+        if (['n', 'p','z'].includes(grade)) {
+            return;
+        }
+
+
             const imageUrl = getImageUrlByGrade(grade);
             const img = document.createElement('img');
             img.src = imageUrl;
             restaurantDiv.appendChild(img);
 
-            // Add click event to show additional information
-            restaurantDiv.addEventListener('click', () => {
-                const additionalInfo = `Cuisine: ${restaurant.cuisine_description}<br>DBA: ${restaurant.dba}`;
-                alert(additionalInfo);
-            });
 
-            restaurantsDiv.appendChild(restaurantDiv);
+                    // Add click event to show additional information
+        restaurantDiv.addEventListener('click', () => {
+            const additionalInfo = `Cuisine: ${restaurant.cuisine_description}
+            <br> DBA: ${restaurant.dba}
+            <br>  Grade: ${restaurant.grade}`;
+            informationDiv.innerHTML = additionalInfo; // Display additional information
         });
-    }
+
+        restaurantsDiv.appendChild(restaurantDiv);
+    
+    
+    const buttonA = document.getElementById('filter-a')
+    buttonA.addEventListener ('click', () => {
+        console.log("working?");
+
+        document.getElementById("restaurants");
+        restaurantsDiv.innerHTML = "" 
+        console.log(restaurants)
+         // Filter data based on grade
+        const GradeAData = restaurants.filter(item => item.grade == 'A');
+
+        // Render restaurants
+        renderRestaurants(GradeAData);
+
+    });
+    });
+
+
+
+}
+
 
     function getImageUrlByGrade(grade) {
         // Define image URLs based on grade
@@ -84,7 +117,40 @@ document.addEventListener("DOMContentLoaded", function() {
                 return 'imgs/b-banana.png';
             case 'c':
                 return 'imgs/c-banana.png';
-            
         }
     }
 });
+
+const nycURL = 'https://data.cityofnewyork.us/resource/43nn-pn8j.json'
+
+const workWithData = data => {
+console.log(data)
+	// how do we get an array of a specific property value (dog breed == Boxer, in this case)
+	const agrade = data.filter(object => object.grade == 'a');
+
+    function checkGrade() {
+        return agrade;
+}
+
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("filter-a").onclick = function() {myFunction()};
+
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  document.getElementById("restaurants").classList.toggle('hidden');
+  console.log("working?");
+}
+
+    fetch(nycURL)
+    .then(response => response.json())
+    .then(json => {
+        workWithData(json)
+    })
+
+
+}
+
+
+// ask: how to filter, animate the falling bananas when clicked on the filter,
+// or the filter system is drag and drop into the plate 
+

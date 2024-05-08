@@ -13,6 +13,10 @@
     margin-left:500px;
     margin-bottom:100px;
     z-index: 100;
+    font-family: miller-display, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:15px;
 
 }
 body{
